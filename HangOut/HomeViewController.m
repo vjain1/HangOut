@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import <MessageUI/MessageUI.h>
 #import "PlacesViewController.h"
+#import "InvitesViewController.h"
 
 @interface HomeViewController ()
 
@@ -68,6 +69,8 @@
 }
 
 - (IBAction)onInvitesSelect:(id)sender {
+    InvitesViewController *invitesVC = [[InvitesViewController alloc] initWithNibName:@"InvitesViewController" bundle:nil];
+    [self.navigationController pushViewController:invitesVC animated:YES];
 }
 
 - (void)showSMS:(NSString*)message {

@@ -9,6 +9,10 @@
 #import "InvitesViewController.h"
 #import "InvitesViewCell.h"
 
+
+#define RECEIVED_INVITE @"Received"
+#define SENT_INVITE @"Sent"
+
 @interface InvitesViewController ()
 
 @end
@@ -28,11 +32,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-}
-
--(void) createInvitesArray
-{
     
+    NSString *pListPath = [[NSBundle mainBundle] pathForResource:@"Invites" ofType:@"plist"];
+    _arrInvites = [[NSArray alloc] initWithContentsOfFile:pListPath];
+    NSLog(@"_arrPlaces %lu",(unsigned long)[_arrInvites count]);
+
+    _inviteType = RECEIVED_INVITE;
+    [self loadTable];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,8 +50,9 @@
 
 
 #pragma mark - UITableViewDataSource
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [_arrInvites count];
+    return [_arrSelectedInvites count];
 }
 
 
@@ -60,81 +67,53 @@
         cell = [nib objectAtIndex:0];
     }
     
-//    MenuCategory *objCategory = [_arrCategory objectAtIndex:indexPath.row];
-//    
-//    //    cell.Label.text = objCategory.name;
-//    cell.Label.font = (__bridge UIFont *)((__bridge CGFontRef)[Theme getFontForHeadline]);
-//    
-//    //    cell.Label.font = [Theme getFontForHeadline];
-//    cell.Label.textColor = [Theme getColorForSelectedTabs];
-//    
-//    if ([objCategory.name isEqualToString:@"You Pick Two"]) {
-//        //        NSString *cubedSymbol = @"\u00AE";//@"\u00B3";
-//        NSString *categoryName = [NSString stringWithFormat:@"%@ ®", objCategory.name];
-//        cell.Label.text = categoryName;
-//        
-//        
-//        
-//        // Commented as this block is crashing on iOS 5.
-//        /*        [cell.Label setText:categoryName afterInheritingLabelAttributesAndConfiguringWithBlock: ^(NSMutableAttributedString *mutableAttributedString) {
-//         NSRange range = [categoryName rangeOfString:@"®"];
-//         //            [mutableAttributedString addAttribute:(__bridge id ) kCTSuperscriptAttributeName value:(id)[NSNumber numberWithInt:1] range:range];
-//         UIFont *smallFont = [UIFont fontWithName:@"Sina-Medium" size:12.0];
-//         [mutableAttributedString addAttribute:(__bridge NSString *)kCTFontAttributeName value:smallFont range:range];
-//         
-//         return mutableAttributedString;
-//         }]; */
-//        
-//        
-//    } else {
-//        cell.Label.text = objCategory.name;
+    NSDictionary *dictInvites = [self.arrSelectedInvites objectAtIndex:indexPath.row];
+
+    //if([_inviteType isEqualToString:[dictInvites valueForKey:@"InviteType"]]){
+        cell.friendsName.text = [dictInvites valueForKey:@"InviteeName"];
+        cell.addressLine1.text = [dictInvites valueForKey:@"AddressLine1"];
+        cell.addressLine2.text = [dictInvites valueForKey:@"AddressLine2"];
+        cell.dateTime.text = [dictInvites valueForKey:@"Datetime"];
+        
+        return cell;
+//    }else{
+//        return nil;
 //    }
 //    
-//    
-//    NSURL *urlString = [[ImageUtility sharedInstance] getIconURLwithImageName:objCategory.iconImage];
-//    
-//    [cell setupSpinner];
-//    [cell setItemImageByURL:urlString];
-//    
-//    
-//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//    
-//    CafeManager *cafeMgr = [[CafeManager alloc] init];
-//    Cafe *objCafe = [cafeMgr getCafeWithId:[[OrderManager sharedManager] strCurrentCafeId]];
-//    if ([objCategory.schedules count] > 0) {
-//        BOOL show = NO;
-//        MenuSchedule *currentSchedule = nil;
-//        for (MenuSchedule *schedule in objCategory.schedules) {
-//            if ([Utility checkAvailabilityOfCategorySchedule:schedule forCafe:objCafe]) {
-//                DLog(@"will show");
-//                show = YES;
-//                currentSchedule = schedule;
-//                break;
-//            }
-//        }
-//        
-//        if (show) {
-//            cell.DetailLabel.font = [Theme getFontForFootnotes];
-//            cell.DetailLabel.textColor = [Theme getColorForFootnotes];
-//            
-//            NSString *start = [Utility getScheduleDisplayTime:currentSchedule.startTime];
-//            NSString *end = [Utility getScheduleDisplayTime:currentSchedule.endTime];
-//            
-//            start = [self getStartTimeForCategory:start ForCafe:objCafe];
-//            
-//            cell.DetailLabel.text = [NSString stringWithFormat:@"Available %@ - %@",start,end];
-//            cell.menuTiming = [NSString stringWithFormat:@"%@ is available from %@ - %@",objCategory.name,start,end];
-//        }
-//    }
-//    
-//    if (indexPath.row == [_arrCategory count] - 1)
-//        cell.ImageSeparator.hidden = YES;
-//    
-    return cell;
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
+- (void)loadTable {
+    _arrSelectedInvites = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary *dictItem in _arrInvites) {
+        if([_inviteType isEqualToString:[dictItem valueForKey:@"InviteType"]])
+        {
+            [_arrSelectedInvites addObject:dictItem];
+        }
+    }
+    
+    [self.tableInvites reloadData];
+}
+
+- (IBAction)onSegmentChange:(id)sender {
+    UISegmentedControl *segmentedControl = (UISegmentedControl *) sender;
+    NSInteger selectedSegment = segmentedControl.selectedSegmentIndex;
+    
+    if (selectedSegment == 0) {
+        //toggle the correct view to be visible
+        self.inviteType = RECEIVED_INVITE;
+//        [self.tableInvites reloadData];
+    }
+    else{
+        //toggle the correct view to be visible
+        self.inviteType = SENT_INVITE;
+    }
+    
+    [self loadTable];
+}
 @end

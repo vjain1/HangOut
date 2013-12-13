@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InvitesViewController">
             <connections>
+                <outlet property="tableInvites" destination="06N-so-iTm" id="1EE-8G-c6W"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -15,14 +16,27 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <segmentedControl opaque="NO" clipsSubviews="YES" alpha="0.74999999999999978" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jUv-GD-ciO">
-                    <rect key="frame" x="20" y="31" width="280" height="29"/>
+                    <rect key="frame" x="20" y="73" width="280" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.70999999999999996" colorSpace="calibratedRGB"/>
                     <segments>
                         <segment title="Received"/>
                         <segment title="Sent"/>
                     </segments>
+                    <connections>
+                        <action selector="onSegmentChange:" destination="-1" eventType="valueChanged" id="Gc0-17-6ze"/>
+                    </connections>
                 </segmentedControl>
+                <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="06N-so-iTm">
+                    <rect key="frame" x="0.0" y="109" width="320" height="448"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SJz-ac-JL5"/>
+                        <outlet property="delegate" destination="-1" id="Use-NE-JVP"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="0.88564793360000005" blue="0.48071692459999998" alpha="0.28000000000000003" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

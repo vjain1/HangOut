@@ -10,9 +10,33 @@
 		<key>AddressLine2</key>
 		<string>Pvr Lounge, 3rd Floor, Ambience Mall, Ambience Island, Gurgaon, Haryana 122002 ‎</string>
 		<key>Datetime</key>
-		<string></string>
+		<string>Saturday, 14-Dec-2013 @ 6:30 PM</string>
+		<key>InviteType</key>
+		<string>Received</string>
 	</dict>
-	<string></string>
-	<string></string>
+	<dict>
+		<key>InviteeName</key>
+		<string>Vikas Jain</string>
+		<key>AddressLine1</key>
+		<string>Cafe Coffee Day - PVR Lounge, Ambience Mall</string>
+		<key>AddressLine2</key>
+		<string>Pvr Lounge, 3rd Floor, Ambience Mall, Ambience Island, Gurgaon, Haryana 122002 ‎</string>
+		<key>Datetime</key>
+		<string>Saturday, 14-Dec-2013 @ 6:30 PM</string>
+		<key>InviteType</key>
+		<string>Sent</string>
+	</dict>
+	<dict>
+		<key>InviteeName</key>
+		<string>Sarabjeet Gaba</string>
+		<key>AddressLine1</key>
+		<string>Costa Coffee</string>
+		<key>AddressLine2</key>
+		<string>5 &amp; 6, Ninex City Mart, Sohna Road, Sector 49, Gurgaon, Haryana 122001 ‎</string>
+		<key>Datetime</key>
+		<string>Sunday, 15-Dec-2013 @ 11:30 AM</string>
+		<key>InviteType</key>
+		<string>Received</string>
+	</dict>
 </array>
 </plist>

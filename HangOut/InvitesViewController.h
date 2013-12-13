@@ -10,6 +10,11 @@
 
 @interface InvitesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) NSMutableArray *arrInvites;
+@property (weak, nonatomic) IBOutlet UITableView *tableInvites;
+@property (nonatomic, strong) NSArray *arrInvites;
+@property (nonatomic, strong) NSMutableArray *arrSelectedInvites;
+
+@property (nonatomic, strong) NSString *inviteType;
+- (IBAction)onSegmentChange:(id)sender;
 
 @end
