@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>longitude</key>
+		<real>77.042259</real>
+		<key>latitude</key>
+		<real>28.425826</real>
+		<key>CafeWebsite</key>
+		<string>costacoffee.co.in</string>
+		<key>CafePhone</key>
+		<string>0124 404 7319 </string>
+		<key>CafeAddress</key>
+		<string>5 &amp; 6, Ninex City Mart, Sohna Road, Sector 49, Gurgaon, Haryana 122001 ‎</string>
+		<key>CafeName</key>
+		<string>Costa Coffee</string>
+	</dict>
+	<dict>
+		<key>longitude</key>
+		<real>77.097877</real>
+		<key>latitude</key>
+		<real>28.510936</real>
+		<key>CafeWebsite</key>
+		<string>cafecoffeeday.com</string>
+		<key>CafePhone</key>
+		<string>0124 645 8856</string>
+		<key>CafeAddress</key>
+		<string>Pvr Lounge, 3rd Floor, Ambience Mall, Ambience Island, Gurgaon, Haryana 122002 ‎</string>
+		<key>CafeName</key>
+		<string>Cafe Coffee Day - PVR Lounge, Ambience Mall</string>
+	</dict>
+	<dict>
+		<key>longitude</key>
+		<real>77.07727800000001</real>
+		<key>latitude</key>
+		<real>28.489816</real>
+		<key>CafeWebsite</key>
+		<string></string>
+		<key>CafePhone</key>
+		<string>0124 401 6589</string>
+		<key>CafeAddress</key>
+		<string>Ground Floor, MGF&quot;&quot;the Metropolitian&quot;&quot;, M-G Road, Gurgaon, Haryana 122002 ‎</string>
+		<key>CafeName</key>
+		<string>Barista Lavazza</string>
+	</dict>
+	<dict>
+		<key>longitude</key>
+		<real>77.093757</real>
+		<key>latitude</key>
+		<real>28.485591</real>
+		<key>CafeWebsite</key>
+		<string>cafecoffeeday.com</string>
+		<key>CafePhone</key>
+		<string>092 12 802832</string>
+		<key>CafeAddress</key>
+		<string>Dlf Mega Mall, Golf Course Road, Saraswati Vihar, Gurgaon, Haryana 122002 ‎</string>
+		<key>CafeName</key>
+		<string>Cafe Coffee Day</string>
+	</dict>
+	<dict>
+		<key>longitude</key>
+		<real>77.068123</real>
+		<key>latitude</key>
+		<real>28.463013</real>
+		<key>CafeWebsite</key>
+		<string>pridehotel.com</string>
+		<key>CafePhone</key>
+		<string>0124 460 4600 ‎ </string>
+		<key>CafeAddress</key>
+		<string>353-357, Sector 29, City Centre, Central Ave, Sector 29, Gurgaon, Haryana 12200</string>
+		<key>CafeName</key>
+		<string>Downtown Cafe</string>
+	</dict>
+	<dict>
+		<key>longitude</key>
+		<real>77.07590500000001</real>
+		<key>latitude</key>
+		<real>28.468993</real>
+		<key>CafeWebsite</key>
+		<string>parkplaza.com</string>
+		<key>CafePhone</key>
+		<string>0124 415 0000</string>
+		<key>CafeAddress</key>
+		<string>B Block, Sushant Lok, Phase-I, Gurgaon 122002 Haryana ‎</string>
+		<key>CafeName</key>
+		<string>New Town Cafe</string>
+	</dict>
+</array>
+</plist>

@@ -7,13 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Connection.h"
+#import <MessageUI/MessageUI.h>
 
-@interface HomeViewController : UIViewController
-{
-  Connection* connection;    
-}
+@interface HomeViewController : UIViewController <MFMessageComposeViewControllerDelegate>
 - (IBAction)onSendMessage:(id)sender;
-
 
 @end

@@ -16,11 +16,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-//    HomeViewController *homeCtrl = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
-//    self.mainNavController = [[UINavigationController alloc] initWithRootViewController:homeCtrl];
-
-//    [self.window setRootViewController:self.mainNavController];
+    HomeViewController *home = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    self.mainNavController = [[UINavigationController alloc] initWithRootViewController:home];
+    
     self.window.backgroundColor = [UIColor whiteColor];
+    [self.window setRootViewController:self.mainNavController];
     [self.window makeKeyAndVisible];
     return YES;
 }

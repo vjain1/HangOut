@@ -23,7 +23,11 @@
 		D6929E0A185B1A7B00B2D93E /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6929E08185B1A7B00B2D93E /* SplashViewController.xib */; };
 		D6929E0E185B1A9700B2D93E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6929E0C185B1A9700B2D93E /* HomeViewController.m */; };
 		D6929E0F185B1A9700B2D93E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6929E0D185B1A9700B2D93E /* HomeViewController.xib */; };
-		D6929E15185B6EDE00B2D93E /* SendMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D6929E14185B6EDE00B2D93E /* SendMessage.m */; };
+		D6929E68185B8ED900B2D93E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6929E67185B8ED900B2D93E /* MessageUI.framework */; };
+		D6929E6B185B9A2600B2D93E /* InvitationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6929E6A185B9A2600B2D93E /* InvitationManager.m */; };
+		D6929E6F185B9ACD00B2D93E /* PlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6929E6D185B9ACD00B2D93E /* PlacesViewController.m */; };
+		D6929E70185B9ACD00B2D93E /* PlacesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6929E6E185B9ACD00B2D93E /* PlacesViewController.xib */; };
+		D6929E72185B9B1000B2D93E /* places.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6929E71185B9B1000B2D93E /* places.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +63,13 @@
 		D6929E0B185B1A9700B2D93E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		D6929E0C185B1A9700B2D93E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		D6929E0D185B1A9700B2D93E /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		D6929E13185B6EDE00B2D93E /* SendMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMessage.h; sourceTree = "<group>"; };
-		D6929E14185B6EDE00B2D93E /* SendMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMessage.m; sourceTree = "<group>"; };
+		D6929E67185B8ED900B2D93E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D6929E69185B9A2600B2D93E /* InvitationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvitationManager.h; sourceTree = "<group>"; };
+		D6929E6A185B9A2600B2D93E /* InvitationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitationManager.m; sourceTree = "<group>"; };
+		D6929E6C185B9ACD00B2D93E /* PlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesViewController.h; sourceTree = "<group>"; };
+		D6929E6D185B9ACD00B2D93E /* PlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesViewController.m; sourceTree = "<group>"; };
+		D6929E6E185B9ACD00B2D93E /* PlacesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlacesViewController.xib; sourceTree = "<group>"; };
+		D6929E71185B9B1000B2D93E /* places.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = places.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6929E68185B8ED900B2D93E /* MessageUI.framework in Frameworks */,
 				D6929DD2185B178600B2D93E /* CoreGraphics.framework in Frameworks */,
 				D6929DD4185B178600B2D93E /* UIKit.framework in Frameworks */,
 				D6929DD0185B178600B2D93E /* Foundation.framework in Frameworks */,
@@ -109,6 +119,7 @@
 		D6929DCE185B178600B2D93E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6929E67185B8ED900B2D93E /* MessageUI.framework */,
 				D6929DCF185B178600B2D93E /* Foundation.framework */,
 				D6929DD1185B178600B2D93E /* CoreGraphics.framework */,
 				D6929DD3185B178600B2D93E /* UIKit.framework */,
@@ -132,6 +143,7 @@
 		D6929DD6185B178600B2D93E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D6929E71185B9B1000B2D93E /* places.plist */,
 				D6929DD7185B178600B2D93E /* HangOut-Info.plist */,
 				D6929DD8185B178600B2D93E /* InfoPlist.strings */,
 				D6929DDB185B178600B2D93E /* main.m */,
@@ -161,7 +173,6 @@
 		D6929DFE185B198100B2D93E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D6929E10185B6E2000B2D93E /* Message */,
 				D6929E05185B1A4800B2D93E /* Invites */,
 				D6929E04185B1A3F00B2D93E /* Friends */,
 				D6929E03185B1A3100B2D93E /* Event */,
@@ -203,6 +214,9 @@
 		D6929E02185B19F600B2D93E /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				D6929E6C185B9ACD00B2D93E /* PlacesViewController.h */,
+				D6929E6D185B9ACD00B2D93E /* PlacesViewController.m */,
+				D6929E6E185B9ACD00B2D93E /* PlacesViewController.xib */,
 			);
 			name = Places;
 			sourceTree = "<group>";
@@ -224,17 +238,10 @@
 		D6929E05185B1A4800B2D93E /* Invites */ = {
 			isa = PBXGroup;
 			children = (
+				D6929E69185B9A2600B2D93E /* InvitationManager.h */,
+				D6929E6A185B9A2600B2D93E /* InvitationManager.m */,
 			);
 			name = Invites;
-			sourceTree = "<group>";
-		};
-		D6929E10185B6E2000B2D93E /* Message */ = {
-			isa = PBXGroup;
-			children = (
-				D6929E13185B6EDE00B2D93E /* SendMessage.h */,
-				D6929E14185B6EDE00B2D93E /* SendMessage.m */,
-			);
-			name = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +321,8 @@
 			files = (
 				D6929DDA185B178600B2D93E /* InfoPlist.strings in Resources */,
 				D6929E0A185B1A7B00B2D93E /* SplashViewController.xib in Resources */,
+				D6929E72185B9B1000B2D93E /* places.plist in Resources */,
+				D6929E70185B9ACD00B2D93E /* PlacesViewController.xib in Resources */,
 				D6929DE2185B178600B2D93E /* Images.xcassets in Resources */,
 				D6929E0F185B1A9700B2D93E /* HomeViewController.xib in Resources */,
 			);
@@ -334,11 +343,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6929E6F185B9ACD00B2D93E /* PlacesViewController.m in Sources */,
 				D6929DE0185B178600B2D93E /* AppDelegate.m in Sources */,
-				D6929E15185B6EDE00B2D93E /* SendMessage.m in Sources */,
 				D6929DDC185B178600B2D93E /* main.m in Sources */,
 				D6929E09185B1A7B00B2D93E /* SplashViewController.m in Sources */,
 				D6929E0E185B1A9700B2D93E /* HomeViewController.m in Sources */,
+				D6929E6B185B9A2600B2D93E /* InvitationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,10 +467,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: vishnu vardhan Reddy G (KRGBECBZ3C)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HangOut/HangOut-Prefix.pch";
 				INFOPLIST_FILE = "HangOut/HangOut-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8B48CCC2-2A2F-4E9C-837C-31A622ECF9D5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -470,10 +482,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: vishnu vardhan Reddy G (KRGBECBZ3C)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HangOut/HangOut-Prefix.pch";
 				INFOPLIST_FILE = "HangOut/HangOut-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8B48CCC2-2A2F-4E9C-837C-31A622ECF9D5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -539,6 +553,7 @@
 				D6929DFA185B178600B2D93E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6929DFB185B178600B2D93E /* Build configuration list for PBXNativeTarget "HangOutTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +562,7 @@
 				D6929DFD185B178600B2D93E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,14 +14,14 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpx-2h-Ypu">
-                    <rect key="frame" x="84" y="299" width="101" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCj-oN-Q5f">
+                    <rect key="frame" x="78" y="294" width="182" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="SendMessage">
+                    <state key="normal" title="SEND MESSAGE">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="onSendMessage:" destination="-1" eventType="touchUpInside" id="gbf-1Y-7gd"/>
+                        <action selector="onSendMessage:" destination="-1" eventType="touchUpInside" id="wkb-as-uHw"/>
                     </connections>
                 </button>
             </subviews>

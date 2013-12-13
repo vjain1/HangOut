@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import <MessageUI/MessageUI.h>
 
 @interface HomeViewController ()
 
@@ -36,13 +37,60 @@
 }
 
 - (IBAction)onSendMessage:(id)sender {
-    NSString *strMessage = @"This is a test message";
     
-    // Create network packet to be sent to all clients
-    NSDictionary* packet = [NSDictionary dictionaryWithObjectsAndKeys:strMessage, @"message", @"Vikas", @"from", nil];
+//    MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init] ;
+//    if([MFMessageComposeViewController canSendText])
+//    {
+//        controller.body = @"This is a test message from Vikas";
+//        controller.recipients = [NSArray arrayWithObjects:@"9810582226", nil];
+//        controller.messageComposeDelegate = self;
+//        [self presentViewController:controller animated:YES completion:^(void){
+//            [self dismissViewControllerAnimated:YES completion:nil];
+//        }];
+//    }
     
-    // Send it out
-//    [connection sendNetworkPacket:packet];
-    
+    [self showSMS:@"This is a test message from Vikas"];
 }
+
+- (void)showSMS:(NSString*)message {
+    
+    if(![MFMessageComposeViewController canSendText]) {
+        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Your device doesn't support SMS!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [warningAlert show];
+        return;
+    }
+    
+    NSArray *recipents = @[@"vikas_jain2012@yahoo.com"];
+    
+    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
+    messageController.messageComposeDelegate = self;
+    [messageController setRecipients:recipents];
+    [messageController setBody:message];
+    
+    // Present message view controller on screen
+    [self presentViewController:messageController animated:YES completion:nil];
+}
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result{
+    switch (result) {
+        case MessageComposeResultCancelled:
+            break;
+            
+        case MessageComposeResultFailed:
+        {
+            UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Failed to send SMS!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [warningAlert show];
+            break;
+        }
+            
+        case MessageComposeResultSent:
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end
