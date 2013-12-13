@@ -7,12 +7,16 @@
 //
 
 #import "EventViewController.h"
+#import "EventCreatedViewController.h"
 
 @interface EventViewController ()
 @property(nonatomic,weak)IBOutlet UILabel *lblCafeName;
 @property(nonatomic,weak)IBOutlet UILabel *lblCafePhone;
 @property(nonatomic,weak)IBOutlet UILabel *lblCafeWebsite;
 @property(nonatomic,weak)IBOutlet UILabel *lblCafeAddress;
+
+@property(nonatomic,weak)IBOutlet UIDatePicker *datePicker;
+@property(nonatomic,weak)IBOutlet UIButton *btnCreateEvent;
 @end
 
 @implementation EventViewController
@@ -29,6 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [_btnCreateEvent addTarget:self action:@selector(onCreateEventTap) forControlEvents:UIControlEventTouchUpInside];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -37,6 +42,22 @@
     _lblCafePhone.text = [_dictSelectedPlace objectForKey:@"CafePhone"];
     _lblCafeWebsite.text = [_dictSelectedPlace objectForKey:@"CafeWebsite"];
     _lblCafeAddress.text = [_dictSelectedPlace objectForKey:@"CafeAddress"];
+}
+
+-(void)onCreateEventTap {
+    NSLocale *usLocale = [[NSLocale alloc]
+                          initWithLocaleIdentifier:@"en_US"];
+    
+    NSDate *pickerDate = [_datePicker date];
+    NSString *selectionString = [[NSString alloc]
+                                 initWithFormat:@"%@",
+                                 [pickerDate descriptionWithLocale:usLocale]];
+    
+    EventCreatedViewController *objEventCreatedVC = [[EventCreatedViewController alloc] initWithNibName:@"EventCreatedViewController" bundle:nil];
+    objEventCreatedVC.strSelectedDateTime = selectionString;
+    objEventCreatedVC.dictSelectedPlace = _dictSelectedPlace;
+    [self.navigationController pushViewController:objEventCreatedVC animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning

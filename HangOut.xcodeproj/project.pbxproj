@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		64182223185BAE510086B6F0 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64182221185BAE510086B6F0 /* EventViewController.m */; };
 		64182224185BAE510086B6F0 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64182222185BAE510086B6F0 /* EventViewController.xib */; };
+		64182227185BB96B0086B6F0 /* PlacesViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64182226185BB96B0086B6F0 /* PlacesViewCell.m */; };
+		64182229185BB9940086B6F0 /* PlacesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64182228185BB9940086B6F0 /* PlacesViewCell.xib */; };
+		6418222D185BBCD50086B6F0 /* EventCreatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6418222B185BBCD50086B6F0 /* EventCreatedViewController.m */; };
+		6418222E185BBCD50086B6F0 /* EventCreatedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6418222C185BBCD50086B6F0 /* EventCreatedViewController.xib */; };
 		D6208C6B185BB30100F0F501 /* InvitesViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6208C66185BB30100F0F501 /* InvitesViewCell.m */; };
 		D6208C6C185BB30100F0F501 /* InvitesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6208C67185BB30100F0F501 /* InvitesViewCell.xib */; };
 		D6208C6D185BB30100F0F501 /* InvitesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6208C69185BB30100F0F501 /* InvitesViewController.m */; };
@@ -51,6 +55,12 @@
 		64182220185BAE510086B6F0 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
 		64182221185BAE510086B6F0 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
 		64182222185BAE510086B6F0 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventViewController.xib; sourceTree = "<group>"; };
+		64182225185BB96B0086B6F0 /* PlacesViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesViewCell.h; sourceTree = "<group>"; };
+		64182226185BB96B0086B6F0 /* PlacesViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesViewCell.m; sourceTree = "<group>"; };
+		64182228185BB9940086B6F0 /* PlacesViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlacesViewCell.xib; sourceTree = "<group>"; };
+		6418222A185BBCD50086B6F0 /* EventCreatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCreatedViewController.h; sourceTree = "<group>"; };
+		6418222B185BBCD50086B6F0 /* EventCreatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCreatedViewController.m; sourceTree = "<group>"; };
+		6418222C185BBCD50086B6F0 /* EventCreatedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedViewController.xib; sourceTree = "<group>"; };
 		D6208C65185BB30100F0F501 /* InvitesViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvitesViewCell.h; sourceTree = "<group>"; };
 		D6208C66185BB30100F0F501 /* InvitesViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitesViewCell.m; sourceTree = "<group>"; };
 		D6208C67185BB30100F0F501 /* InvitesViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvitesViewCell.xib; sourceTree = "<group>"; };
@@ -235,6 +245,9 @@
 				D6929E6C185B9ACD00B2D93E /* PlacesViewController.h */,
 				D6929E6D185B9ACD00B2D93E /* PlacesViewController.m */,
 				D6929E6E185B9ACD00B2D93E /* PlacesViewController.xib */,
+				64182225185BB96B0086B6F0 /* PlacesViewCell.h */,
+				64182226185BB96B0086B6F0 /* PlacesViewCell.m */,
+				64182228185BB9940086B6F0 /* PlacesViewCell.xib */,
 			);
 			name = Places;
 			sourceTree = "<group>";
@@ -245,6 +258,9 @@
 				64182220185BAE510086B6F0 /* EventViewController.h */,
 				64182221185BAE510086B6F0 /* EventViewController.m */,
 				64182222185BAE510086B6F0 /* EventViewController.xib */,
+				6418222A185BBCD50086B6F0 /* EventCreatedViewController.h */,
+				6418222B185BBCD50086B6F0 /* EventCreatedViewController.m */,
+				6418222C185BBCD50086B6F0 /* EventCreatedViewController.xib */,
 			);
 			name = Event;
 			sourceTree = "<group>";
@@ -350,11 +366,13 @@
 				D6208C6C185BB30100F0F501 /* InvitesViewCell.xib in Resources */,
 				D6929E0A185B1A7B00B2D93E /* SplashViewController.xib in Resources */,
 				D6208C70185BB56B00F0F501 /* Invites.plist in Resources */,
+				6418222E185BBCD50086B6F0 /* EventCreatedViewController.xib in Resources */,
 				D6929E72185B9B1000B2D93E /* places.plist in Resources */,
 				D6929E70185B9ACD00B2D93E /* PlacesViewController.xib in Resources */,
 				D6929DE2185B178600B2D93E /* Images.xcassets in Resources */,
 				D6208C6E185BB30100F0F501 /* InvitesViewController.xib in Resources */,
 				64182224185BAE510086B6F0 /* EventViewController.xib in Resources */,
+				64182229185BB9940086B6F0 /* PlacesViewCell.xib in Resources */,
 				D6929E0F185B1A9700B2D93E /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,10 +394,12 @@
 			files = (
 				D6929E6F185B9ACD00B2D93E /* PlacesViewController.m in Sources */,
 				D6208C6B185BB30100F0F501 /* InvitesViewCell.m in Sources */,
+				6418222D185BBCD50086B6F0 /* EventCreatedViewController.m in Sources */,
 				D6929DE0185B178600B2D93E /* AppDelegate.m in Sources */,
 				D6929DDC185B178600B2D93E /* main.m in Sources */,
 				D6208C6D185BB30100F0F501 /* InvitesViewController.m in Sources */,
 				64182223185BAE510086B6F0 /* EventViewController.m in Sources */,
+				64182227185BB96B0086B6F0 /* PlacesViewCell.m in Sources */,
 				D6929E09185B1A7B00B2D93E /* SplashViewController.m in Sources */,
 				D6929E0E185B1A9700B2D93E /* HomeViewController.m in Sources */,
 				D6929E6B185B9A2600B2D93E /* InvitationManager.m in Sources */,
