@@ -13,6 +13,7 @@
 		D6208C6C185BB30100F0F501 /* InvitesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6208C67185BB30100F0F501 /* InvitesViewCell.xib */; };
 		D6208C6D185BB30100F0F501 /* InvitesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6208C69185BB30100F0F501 /* InvitesViewController.m */; };
 		D6208C6E185BB30100F0F501 /* InvitesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6208C6A185BB30100F0F501 /* InvitesViewController.xib */; };
+		D6208C70185BB56B00F0F501 /* Invites.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6208C6F185BB56B00F0F501 /* Invites.plist */; };
 		D6929DD0185B178600B2D93E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6929DCF185B178600B2D93E /* Foundation.framework */; };
 		D6929DD2185B178600B2D93E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6929DD1185B178600B2D93E /* CoreGraphics.framework */; };
 		D6929DD4185B178600B2D93E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6929DD3185B178600B2D93E /* UIKit.framework */; };
@@ -56,6 +57,7 @@
 		D6208C68185BB30100F0F501 /* InvitesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvitesViewController.h; sourceTree = "<group>"; };
 		D6208C69185BB30100F0F501 /* InvitesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitesViewController.m; sourceTree = "<group>"; };
 		D6208C6A185BB30100F0F501 /* InvitesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvitesViewController.xib; sourceTree = "<group>"; };
+		D6208C6F185BB56B00F0F501 /* Invites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Invites.plist; sourceTree = "<group>"; };
 		D6929DCC185B178600B2D93E /* HangOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6929DCF185B178600B2D93E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6929DD1185B178600B2D93E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -163,6 +165,7 @@
 				D6929DD8185B178600B2D93E /* InfoPlist.strings */,
 				D6929DDB185B178600B2D93E /* main.m */,
 				D6929DDD185B178600B2D93E /* HangOut-Prefix.pch */,
+				D6208C6F185BB56B00F0F501 /* Invites.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				D6929DDA185B178600B2D93E /* InfoPlist.strings in Resources */,
 				D6208C6C185BB30100F0F501 /* InvitesViewCell.xib in Resources */,
 				D6929E0A185B1A7B00B2D93E /* SplashViewController.xib in Resources */,
+				D6208C70185BB56B00F0F501 /* Invites.plist in Resources */,
 				D6929E72185B9B1000B2D93E /* places.plist in Resources */,
 				D6929E70185B9ACD00B2D93E /* PlacesViewController.xib in Resources */,
 				D6929DE2185B178600B2D93E /* Images.xcassets in Resources */,
