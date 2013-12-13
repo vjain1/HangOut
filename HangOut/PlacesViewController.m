@@ -8,6 +8,7 @@
 
 #import "PlacesViewController.h"
 #import "EventViewController.h"
+#import "PlacesViewCell.h"
 
 @interface PlacesViewController ()
 
@@ -39,14 +40,17 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"PlaceIdentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    PlacesViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    if (nil == cell) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"PlacesViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
     
     NSDictionary *dictPlace = [self.arrPlaces objectAtIndex:indexPath.row];
-    cell.textLabel.text = [dictPlace valueForKey:@"CafeName"];
+    cell.cafeName.text = [dictPlace valueForKey:@"CafeName"];
+    cell.cafeAddress.text = [dictPlace valueForKey:@"CafeAddress"];
     
     return cell;
 }
@@ -60,6 +64,10 @@
     EventViewController *objEventVC = [[EventViewController alloc] initWithNibName:@"EventViewController" bundle:nil];
     objEventVC.dictSelectedPlace = dictPlace;
     [self.navigationController pushViewController:objEventVC animated:YES];
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 96.0;
 }
 
 - (void)didReceiveMemoryWarning
