@@ -24,59 +24,59 @@
                         <action selector="onSendMessage:" destination="-1" eventType="touchUpInside" id="wkb-as-uHw"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDM-iy-pzI">
-                    <rect key="frame" x="20" y="105" width="280" height="30"/>
+                <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDM-iy-pzI">
+                    <rect key="frame" x="20" y="105" width="280" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Go Out for a Coffee">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.70999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="17"/>
+                    <state key="normal" title="Go Out for a Coffee"/>
                     <connections>
-                        <action selector="onCoffeeSelect:" destination="-1" eventType="touchUpInside" id="zbH-MA-KyA"/>
+                        <action selector="onCoffeeSelect:" destination="-1" eventType="touchUpInside" id="7tK-Z4-zbr"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAJ-xv-Mok">
-                    <rect key="frame" x="20" y="143" width="280" height="30"/>
+                <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Z4-6Z-Dlm">
+                    <rect key="frame" x="20" y="160" width="280" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Go Out for a Movie">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.70999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="17"/>
+                    <state key="normal" title="Go Out for a Movie"/>
                     <connections>
-                        <action selector="onMovieSelect:" destination="-1" eventType="touchUpInside" id="aW9-AL-MTt"/>
+                        <action selector="onMovieSelect:" destination="-1" eventType="touchUpInside" id="sLF-9t-UOw"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5Y-rJ-MOs">
-                    <rect key="frame" x="20" y="181" width="280" height="30"/>
+                <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjg-gD-xnw">
+                    <rect key="frame" x="20" y="213" width="280" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Go Out for meal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.70999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="17"/>
+                    <state key="normal" title="Go Out for a Meal"/>
                     <connections>
-                        <action selector="onMealSelect:" destination="-1" eventType="touchUpInside" id="Nf0-J0-gMg"/>
+                        <action selector="onMealSelect:" destination="-1" eventType="touchUpInside" id="NbF-sy-X1S"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iY9-hp-5Qy">
-                    <rect key="frame" x="20" y="219" width="280" height="30"/>
+                <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBk-wb-hQb">
+                    <rect key="frame" x="20" y="268" width="280" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Go Out for some gaming">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.70999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="17"/>
+                    <state key="normal" title="Go Out for Gaming"/>
                     <connections>
-                        <action selector="onGamingSelect:" destination="-1" eventType="touchUpInside" id="iQ6-wN-GoA"/>
+                        <action selector="onGamingSelect:" destination="-1" eventType="touchUpInside" id="vcz-r3-oqm"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlA-N9-bI4">
-                    <rect key="frame" x="20" y="335" width="280" height="30"/>
+                <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5M-X9-1SZ">
+                    <rect key="frame" x="20" y="398" width="280" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="View Invites">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.70999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="17"/>
+                    <state key="normal" title="View Invites"/>
                     <connections>
-                        <action selector="onInvitesSelect:" destination="-1" eventType="touchUpInside" id="SW1-fL-6PH"/>
+                        <action selector="onInvitesSelect:" destination="-1" eventType="touchUpInside" id="lrm-Qw-XfQ"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <color key="backgroundColor" red="1" green="0.88564793360796146" blue="0.48071692459998672" alpha="0.28000000000000003" colorSpace="calibratedRGB"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
