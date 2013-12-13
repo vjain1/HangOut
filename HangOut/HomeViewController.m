@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import <MessageUI/MessageUI.h>
+#import "PlacesViewController.h"
 
 @interface HomeViewController ()
 
@@ -56,6 +57,8 @@
 }
 
 - (IBAction)onCoffeeSelect:(id)sender {
+    PlacesViewController *objPlaces = [[PlacesViewController alloc] initWithNibName:@"PlacesViewController" bundle:nil];
+    [self.navigationController pushViewController:objPlaces animated:YES];
 }
 
 - (IBAction)onMovieSelect:(id)sender {

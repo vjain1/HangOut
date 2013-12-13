@@ -7,17 +7,14 @@
 //
 
 #import "PlacesViewController.h"
-
-#import <GoogleMaps/GoogleMaps.h>
+#import "EventViewController.h"
 
 @interface PlacesViewController ()
 
+@property(nonatomic,strong) NSArray *arrPlaces;
 @end
 
 @implementation PlacesViewController {
-    GMSMapView *mapView_;
-    
-    CLLocationManager *locationManager;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -32,49 +29,38 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     
-    // Create a GMSCameraPosition that tells the map to display the
-    // coordinate -33.86,151.20 at zoom level 6.
-    
-    locationManager = [[CLLocationManager alloc] init];
-    locationManager.delegate=self;
-    locationManager.desiredAccuracy=kCLLocationAccuracyBest;
-    locationManager.distanceFilter=kCLDistanceFilterNone;
-    
-    [locationManager startUpdatingLocation];
-    
-    
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-33.86
-                                                            longitude:151.20
-                                                                 zoom:6];
-    mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-    mapView_.myLocationEnabled = YES;
-    self.view = mapView_;
-    
+    NSString *pListPath = [[NSBundle mainBundle] pathForResource:@"places" ofType:@"plist"];
+    _arrPlaces = [[NSArray alloc] initWithContentsOfFile:pListPath];
+    NSLog(@"_arrPlaces %d",_arrPlaces.count);
+    [self.tableCafes reloadData];
     
 }
 
--(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    CLLocation *location = [locations lastObject];
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"PlaceIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
-    CLLocationCoordinate2D coord;
-    coord.longitude = location.coordinate.longitude;
-    coord.latitude = location.coordinate.latitude;
-//    lat = coord.latitude;
-//    longt = coord.longitude;
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
     
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:coord.latitude
-                                                            longitude:coord.longitude
-                                                                 zoom:13];
-    mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-    mapView_.myLocationEnabled = YES;
-    self.view = mapView_;
+    NSDictionary *dictPlace = [self.arrPlaces objectAtIndex:indexPath.row];
+    cell.textLabel.text = [dictPlace valueForKey:@"CafeName"];
     
-    
-    [locationManager stopUpdatingLocation];
+    return cell;
 }
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _arrPlaces.count;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *dictPlace = [self.arrPlaces objectAtIndex:indexPath.row];
+    EventViewController *objEventVC = [[EventViewController alloc] initWithNibName:@"EventViewController" bundle:nil];
+    objEventVC.dictSelectedPlace = dictPlace;
+    [self.navigationController pushViewController:objEventVC animated:YES];
+}
 
 - (void)didReceiveMemoryWarning
 {

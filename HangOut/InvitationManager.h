@@ -10,6 +10,6 @@
 
 @interface InvitationManager : NSObject
 
--(void) sendInvite:
+-(void) sendInvite;
 
 @end

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#import <CoreLocation/CoreLocation.h>
+@interface PlacesViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
-@interface PlacesViewController : UIViewController<CLLocationManagerDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableCafes;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *objSegmentedControl;
 
 @end

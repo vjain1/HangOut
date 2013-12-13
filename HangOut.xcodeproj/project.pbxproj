@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64182223185BAE510086B6F0 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64182221185BAE510086B6F0 /* EventViewController.m */; };
+		64182224185BAE510086B6F0 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64182222185BAE510086B6F0 /* EventViewController.xib */; };
 		D6929DD0185B178600B2D93E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6929DCF185B178600B2D93E /* Foundation.framework */; };
 		D6929DD2185B178600B2D93E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6929DD1185B178600B2D93E /* CoreGraphics.framework */; };
 		D6929DD4185B178600B2D93E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6929DD3185B178600B2D93E /* UIKit.framework */; };
@@ -41,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64182220185BAE510086B6F0 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
+		64182221185BAE510086B6F0 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
+		64182222185BAE510086B6F0 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventViewController.xib; sourceTree = "<group>"; };
 		D6929DCC185B178600B2D93E /* HangOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6929DCF185B178600B2D93E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6929DD1185B178600B2D93E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -224,6 +229,9 @@
 		D6929E03185B1A3100B2D93E /* Event */ = {
 			isa = PBXGroup;
 			children = (
+				64182220185BAE510086B6F0 /* EventViewController.h */,
+				64182221185BAE510086B6F0 /* EventViewController.m */,
+				64182222185BAE510086B6F0 /* EventViewController.xib */,
 			);
 			name = Event;
 			sourceTree = "<group>";
@@ -324,6 +332,7 @@
 				D6929E72185B9B1000B2D93E /* places.plist in Resources */,
 				D6929E70185B9ACD00B2D93E /* PlacesViewController.xib in Resources */,
 				D6929DE2185B178600B2D93E /* Images.xcassets in Resources */,
+				64182224185BAE510086B6F0 /* EventViewController.xib in Resources */,
 				D6929E0F185B1A9700B2D93E /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +355,7 @@
 				D6929E6F185B9ACD00B2D93E /* PlacesViewController.m in Sources */,
 				D6929DE0185B178600B2D93E /* AppDelegate.m in Sources */,
 				D6929DDC185B178600B2D93E /* main.m in Sources */,
+				64182223185BAE510086B6F0 /* EventViewController.m in Sources */,
 				D6929E09185B1A7B00B2D93E /* SplashViewController.m in Sources */,
 				D6929E0E185B1A9700B2D93E /* HomeViewController.m in Sources */,
 				D6929E6B185B9A2600B2D93E /* InvitationManager.m in Sources */,
