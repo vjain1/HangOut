@@ -7,6 +7,7 @@
 //
 
 #import "EventCreatedViewController.h"
+#import "ContactsViewController.h"
 
 @interface EventCreatedViewController ()
 @property(nonatomic,weak)IBOutlet UILabel *lblCafeName;
@@ -43,7 +44,8 @@
 }
 
 -(void)onInviteFriends {
-    
+    ContactsViewController *contactVC = [[ContactsViewController alloc] initWithNibName:@"ContactsViewController" bundle:nil];
+    [self.navigationController pushViewController:contactVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
