@@ -11,5 +11,10 @@
 
 @interface HomeViewController : UIViewController <MFMessageComposeViewControllerDelegate>
 - (IBAction)onSendMessage:(id)sender;
+- (IBAction)onGamingSelect:(id)sender;
 
+- (IBAction)onCoffeeSelect:(id)sender;
+- (IBAction)onMovieSelect:(id)sender;
+- (IBAction)onMealSelect:(id)sender;
+- (IBAction)onInvitesSelect:(id)sender;
 @end

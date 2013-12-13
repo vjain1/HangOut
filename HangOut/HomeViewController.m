@@ -52,6 +52,21 @@
     [self showSMS:@"This is a test message from Vikas"];
 }
 
+- (IBAction)onGamingSelect:(id)sender {
+}
+
+- (IBAction)onCoffeeSelect:(id)sender {
+}
+
+- (IBAction)onMovieSelect:(id)sender {
+}
+
+- (IBAction)onMealSelect:(id)sender {
+}
+
+- (IBAction)onInvitesSelect:(id)sender {
+}
+
 - (void)showSMS:(NSString*)message {
     
     if(![MFMessageComposeViewController canSendText]) {
