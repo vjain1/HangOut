@@ -15,6 +15,7 @@
 		6418222E185BBCD50086B6F0 /* EventCreatedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6418222C185BBCD50086B6F0 /* EventCreatedViewController.xib */; };
 		64182232185BC20F0086B6F0 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64182230185BC20F0086B6F0 /* ContactsViewController.m */; };
 		64182233185BC20F0086B6F0 /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64182231185BC20F0086B6F0 /* ContactsViewController.xib */; };
+		64182236185BCB6A0086B6F0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 64182235185BCB6A0086B6F0 /* Person.m */; };
 		D6208C6B185BB30100F0F501 /* InvitesViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6208C66185BB30100F0F501 /* InvitesViewCell.m */; };
 		D6208C6C185BB30100F0F501 /* InvitesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6208C67185BB30100F0F501 /* InvitesViewCell.xib */; };
 		D6208C6D185BB30100F0F501 /* InvitesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6208C69185BB30100F0F501 /* InvitesViewController.m */; };
@@ -66,6 +67,8 @@
 		6418222F185BC20F0086B6F0 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		64182230185BC20F0086B6F0 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		64182231185BC20F0086B6F0 /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
+		64182234185BCB6A0086B6F0 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		64182235185BCB6A0086B6F0 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		D6208C65185BB30100F0F501 /* InvitesViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvitesViewCell.h; sourceTree = "<group>"; };
 		D6208C66185BB30100F0F501 /* InvitesViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitesViewCell.m; sourceTree = "<group>"; };
 		D6208C67185BB30100F0F501 /* InvitesViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvitesViewCell.xib; sourceTree = "<group>"; };
@@ -276,6 +279,8 @@
 				6418222F185BC20F0086B6F0 /* ContactsViewController.h */,
 				64182230185BC20F0086B6F0 /* ContactsViewController.m */,
 				64182231185BC20F0086B6F0 /* ContactsViewController.xib */,
+				64182234185BCB6A0086B6F0 /* Person.h */,
+				64182235185BCB6A0086B6F0 /* Person.m */,
 			);
 			name = Friends;
 			sourceTree = "<group>";
@@ -410,6 +415,7 @@
 				D6208C6D185BB30100F0F501 /* InvitesViewController.m in Sources */,
 				64182223185BAE510086B6F0 /* EventViewController.m in Sources */,
 				64182227185BB96B0086B6F0 /* PlacesViewCell.m in Sources */,
+				64182236185BCB6A0086B6F0 /* Person.m in Sources */,
 				D6929E09185B1A7B00B2D93E /* SplashViewController.m in Sources */,
 				D6929E0E185B1A9700B2D93E /* HomeViewController.m in Sources */,
 				D6929E6B185B9A2600B2D93E /* InvitationManager.m in Sources */,
