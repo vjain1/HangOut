@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		64182223185BAE510086B6F0 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64182221185BAE510086B6F0 /* EventViewController.m */; };
 		64182224185BAE510086B6F0 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64182222185BAE510086B6F0 /* EventViewController.xib */; };
+		D6208C6B185BB30100F0F501 /* InvitesViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6208C66185BB30100F0F501 /* InvitesViewCell.m */; };
+		D6208C6C185BB30100F0F501 /* InvitesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6208C67185BB30100F0F501 /* InvitesViewCell.xib */; };
+		D6208C6D185BB30100F0F501 /* InvitesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6208C69185BB30100F0F501 /* InvitesViewController.m */; };
+		D6208C6E185BB30100F0F501 /* InvitesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6208C6A185BB30100F0F501 /* InvitesViewController.xib */; };
 		D6929DD0185B178600B2D93E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6929DCF185B178600B2D93E /* Foundation.framework */; };
 		D6929DD2185B178600B2D93E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6929DD1185B178600B2D93E /* CoreGraphics.framework */; };
 		D6929DD4185B178600B2D93E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6929DD3185B178600B2D93E /* UIKit.framework */; };
@@ -46,6 +50,12 @@
 		64182220185BAE510086B6F0 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
 		64182221185BAE510086B6F0 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
 		64182222185BAE510086B6F0 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventViewController.xib; sourceTree = "<group>"; };
+		D6208C65185BB30100F0F501 /* InvitesViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvitesViewCell.h; sourceTree = "<group>"; };
+		D6208C66185BB30100F0F501 /* InvitesViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitesViewCell.m; sourceTree = "<group>"; };
+		D6208C67185BB30100F0F501 /* InvitesViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvitesViewCell.xib; sourceTree = "<group>"; };
+		D6208C68185BB30100F0F501 /* InvitesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvitesViewController.h; sourceTree = "<group>"; };
+		D6208C69185BB30100F0F501 /* InvitesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitesViewController.m; sourceTree = "<group>"; };
+		D6208C6A185BB30100F0F501 /* InvitesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvitesViewController.xib; sourceTree = "<group>"; };
 		D6929DCC185B178600B2D93E /* HangOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6929DCF185B178600B2D93E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6929DD1185B178600B2D93E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -246,6 +256,12 @@
 		D6929E05185B1A4800B2D93E /* Invites */ = {
 			isa = PBXGroup;
 			children = (
+				D6208C65185BB30100F0F501 /* InvitesViewCell.h */,
+				D6208C66185BB30100F0F501 /* InvitesViewCell.m */,
+				D6208C67185BB30100F0F501 /* InvitesViewCell.xib */,
+				D6208C68185BB30100F0F501 /* InvitesViewController.h */,
+				D6208C69185BB30100F0F501 /* InvitesViewController.m */,
+				D6208C6A185BB30100F0F501 /* InvitesViewController.xib */,
 				D6929E69185B9A2600B2D93E /* InvitationManager.h */,
 				D6929E6A185B9A2600B2D93E /* InvitationManager.m */,
 			);
@@ -328,10 +344,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6929DDA185B178600B2D93E /* InfoPlist.strings in Resources */,
+				D6208C6C185BB30100F0F501 /* InvitesViewCell.xib in Resources */,
 				D6929E0A185B1A7B00B2D93E /* SplashViewController.xib in Resources */,
 				D6929E72185B9B1000B2D93E /* places.plist in Resources */,
 				D6929E70185B9ACD00B2D93E /* PlacesViewController.xib in Resources */,
 				D6929DE2185B178600B2D93E /* Images.xcassets in Resources */,
+				D6208C6E185BB30100F0F501 /* InvitesViewController.xib in Resources */,
 				64182224185BAE510086B6F0 /* EventViewController.xib in Resources */,
 				D6929E0F185B1A9700B2D93E /* HomeViewController.xib in Resources */,
 			);
@@ -353,8 +371,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6929E6F185B9ACD00B2D93E /* PlacesViewController.m in Sources */,
+				D6208C6B185BB30100F0F501 /* InvitesViewCell.m in Sources */,
 				D6929DE0185B178600B2D93E /* AppDelegate.m in Sources */,
 				D6929DDC185B178600B2D93E /* main.m in Sources */,
+				D6208C6D185BB30100F0F501 /* InvitesViewController.m in Sources */,
 				64182223185BAE510086B6F0 /* EventViewController.m in Sources */,
 				D6929E09185B1A7B00B2D93E /* SplashViewController.m in Sources */,
 				D6929E0E185B1A9700B2D93E /* HomeViewController.m in Sources */,
