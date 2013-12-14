@@ -32,6 +32,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+        [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"app_bg1.jpg"]]];
     
     NSString *pListPath = [[NSBundle mainBundle] pathForResource:@"Invites" ofType:@"plist"];
     _arrInvites = [[NSArray alloc] initWithContentsOfFile:pListPath];

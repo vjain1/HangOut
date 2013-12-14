@@ -43,6 +43,8 @@
                    action:@selector(onSendInvite:)
          forControlEvents:UIControlEventTouchUpInside];
     
+        [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"app_bg1.jpg"]]];
+    
     self.tableData = [[NSMutableArray alloc] init];
     
     // Request authorization to Address Book

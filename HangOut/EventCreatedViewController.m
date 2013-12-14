@@ -34,6 +34,7 @@
 {
     [super viewDidLoad];
     [_btnInviteFriends addTarget:self action:@selector(onInviteFriends) forControlEvents:UIControlEventTouchUpInside];
+        [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"app_bg1.jpg"]]];
     // Do any additional setup after loading the view from its nib.
 }
 

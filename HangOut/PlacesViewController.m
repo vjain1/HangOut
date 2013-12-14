@@ -35,6 +35,8 @@
                    action:@selector(onSGChange:)
          forControlEvents:UIControlEventValueChanged];
     
+        [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"app_bg1.jpg"]]];
+    
     NSString *pListPath = [[NSBundle mainBundle] pathForResource:@"places" ofType:@"plist"];
     _arrPlaces = [[NSArray alloc] initWithContentsOfFile:pListPath];
     NSLog(@"_arrPlaces %d",_arrPlaces.count);

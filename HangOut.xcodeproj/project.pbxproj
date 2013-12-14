@@ -25,6 +25,8 @@
 		D6208C76185BD79F00F0F501 /* movie-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D6208C75185BD79F00F0F501 /* movie-bg.png */; };
 		D6208C78185BD85200F0F501 /* meal_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D6208C77185BD85200F0F501 /* meal_bg.png */; };
 		D6208C7A185BD95900F0F501 /* drinks_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D6208C79185BD95900F0F501 /* drinks_bg.png */; };
+		D6208C7C185BDB8C00F0F501 /* app_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D6208C7B185BDB8C00F0F501 /* app_bg.png */; };
+		D6208C7E185BDDDD00F0F501 /* app_bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6208C7D185BDDDD00F0F501 /* app_bg1.jpg */; };
 		D6929DD0185B178600B2D93E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6929DCF185B178600B2D93E /* Foundation.framework */; };
 		D6929DD2185B178600B2D93E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6929DD1185B178600B2D93E /* CoreGraphics.framework */; };
 		D6929DD4185B178600B2D93E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6929DD3185B178600B2D93E /* UIKit.framework */; };
@@ -84,6 +86,8 @@
 		D6208C75185BD79F00F0F501 /* movie-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movie-bg.png"; sourceTree = "<group>"; };
 		D6208C77185BD85200F0F501 /* meal_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal_bg.png; sourceTree = "<group>"; };
 		D6208C79185BD95900F0F501 /* drinks_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinks_bg.png; sourceTree = "<group>"; };
+		D6208C7B185BDB8C00F0F501 /* app_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_bg.png; sourceTree = "<group>"; };
+		D6208C7D185BDDDD00F0F501 /* app_bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = app_bg1.jpg; sourceTree = "<group>"; };
 		D6929DCC185B178600B2D93E /* HangOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6929DCF185B178600B2D93E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6929DD1185B178600B2D93E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -186,7 +190,9 @@
 		D6929DD6185B178600B2D93E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D6208C7B185BDB8C00F0F501 /* app_bg.png */,
 				D6208C79185BD95900F0F501 /* drinks_bg.png */,
+				D6208C7D185BDDDD00F0F501 /* app_bg1.jpg */,
 				D6929E71185B9B1000B2D93E /* places.plist */,
 				D6208C73185BD49000F0F501 /* coffe_chocolate_bg@2x.png */,
 				D6208C77185BD85200F0F501 /* meal_bg.png */,
@@ -397,8 +403,10 @@
 				64182233185BC20F0086B6F0 /* ContactsViewController.xib in Resources */,
 				D6208C74185BD49000F0F501 /* coffe_chocolate_bg@2x.png in Resources */,
 				D6929E72185B9B1000B2D93E /* places.plist in Resources */,
+				D6208C7C185BDB8C00F0F501 /* app_bg.png in Resources */,
 				D6929E70185B9ACD00B2D93E /* PlacesViewController.xib in Resources */,
 				D6929DE2185B178600B2D93E /* Images.xcassets in Resources */,
+				D6208C7E185BDDDD00F0F501 /* app_bg1.jpg in Resources */,
 				D6208C76185BD79F00F0F501 /* movie-bg.png in Resources */,
 				D6208C6E185BB30100F0F501 /* InvitesViewController.xib in Resources */,
 				64182224185BAE510086B6F0 /* EventViewController.xib in Resources */,
