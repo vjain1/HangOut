@@ -40,21 +40,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)onSendMessage:(id)sender {
-    
-//    MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init] ;
-//    if([MFMessageComposeViewController canSendText])
-//    {
-//        controller.body = @"This is a test message from Vikas";
-//        controller.recipients = [NSArray arrayWithObjects:@"9810582226", nil];
-//        controller.messageComposeDelegate = self;
-//        [self presentViewController:controller animated:YES completion:^(void){
-//            [self dismissViewControllerAnimated:YES completion:nil];
-//        }];
-//    }
-    
-    [self showSMS:@"This is a test message from Vikas"];
-}
+//- (IBAction)onSendMessage:(id)sender {
+//    
+////    MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init] ;
+////    if([MFMessageComposeViewController canSendText])
+////    {
+////        controller.body = @"This is a test message from Vikas";
+////        controller.recipients = [NSArray arrayWithObjects:@"9810582226", nil];
+////        controller.messageComposeDelegate = self;
+////        [self presentViewController:controller animated:YES completion:^(void){
+////            [self dismissViewControllerAnimated:YES completion:nil];
+////        }];
+////    }
+//    
+//    
+//    
+//}
 
 - (IBAction)onGamingSelect:(id)sender {
 }

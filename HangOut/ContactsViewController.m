@@ -171,7 +171,7 @@
         return;
     }
     
-    NSArray *recipents = @[@"vikas_jain2012@yahoo.com"];
+    NSArray *recipents = @[@"9999138412"];
     
     MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
     messageController.messageComposeDelegate = self;

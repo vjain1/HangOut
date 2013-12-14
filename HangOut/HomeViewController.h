@@ -10,7 +10,7 @@
 #import <MessageUI/MessageUI.h>
 
 @interface HomeViewController : UIViewController <MFMessageComposeViewControllerDelegate>
-- (IBAction)onSendMessage:(id)sender;
+//- (IBAction)onSendMessage:(id)sender;
 - (IBAction)onGamingSelect:(id)sender;
 
 - (IBAction)onCoffeeSelect:(id)sender;
