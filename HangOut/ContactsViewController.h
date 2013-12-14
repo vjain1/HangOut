@@ -11,4 +11,7 @@
 
 @interface ContactsViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,MFMessageComposeViewControllerDelegate>
 
+@property(nonatomic,strong) NSDictionary *dictSelectedPlace;
+@property(nonatomic,strong) NSString *strSelectedDateTime;
+
 @end

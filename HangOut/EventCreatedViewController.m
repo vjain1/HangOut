@@ -46,6 +46,8 @@
 
 -(void)onInviteFriends {
     ContactsViewController *contactVC = [[ContactsViewController alloc] initWithNibName:@"ContactsViewController" bundle:nil];
+    contactVC.dictSelectedPlace = _dictSelectedPlace;
+    contactVC.strSelectedDateTime = _strSelectedDateTime;
     [self.navigationController pushViewController:contactVC animated:YES];
 }
 

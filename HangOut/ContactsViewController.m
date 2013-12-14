@@ -73,7 +73,9 @@
 }
 
 - (void)onSendInvite:(id)sender {
-    [self showSMS:@"This is a test message from Vikas"];
+//    [self showSMS:@"This is a test message from Vikas"];
+    NSString *strMessage = [NSString stringWithFormat:@"Vikas would like to invite you to join for a Coffee at %@ on %@",[_dictSelectedPlace valueForKey:@"CafeName"], _strSelectedDateTime];
+    [self showSMS:strMessage];
 }
 
 - (void)getPersonOutOfAddressBook
