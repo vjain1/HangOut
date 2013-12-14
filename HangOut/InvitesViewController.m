@@ -112,6 +112,7 @@
     if (selectedSegment == 0) {
         //toggle the correct view to be visible
         self.inviteType = RECEIVED_INVITE;
+
 //        [self.tableInvites reloadData];
     }
     else{

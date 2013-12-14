@@ -23,7 +23,7 @@
                         <segment title="Received"/>
                         <segment title="Sent"/>
                     </segments>
-                    <color key="tintColor" red="0.003866390306" green="0.003103973406" blue="0.0024013817159999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.17984693879999999" green="0.048163530189999998" blue="0.056349276509999997" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <action selector="onSegmentChange:" destination="-1" eventType="valueChanged" id="Gc0-17-6ze"/>
                     </connections>
