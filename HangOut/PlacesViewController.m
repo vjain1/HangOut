@@ -31,11 +31,19 @@
 {
     [super viewDidLoad];
     
+    [_objSegmentedControl addTarget:self
+                   action:@selector(onSGChange:)
+         forControlEvents:UIControlEventValueChanged];
+    
     NSString *pListPath = [[NSBundle mainBundle] pathForResource:@"places" ofType:@"plist"];
     _arrPlaces = [[NSArray alloc] initWithContentsOfFile:pListPath];
     NSLog(@"_arrPlaces %d",_arrPlaces.count);
     [self.tableCafes reloadData];
     
+}
+
+- (void)onSGChange:(id)sender {
+    [_tableCafes reloadData];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -56,7 +64,13 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _arrPlaces.count;
+    if (_objSegmentedControl.selectedSegmentIndex == 0) {
+        return _arrPlaces.count;
+    }
+    else {
+        return 0;
+    }
+    
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

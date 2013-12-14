@@ -9,11 +9,15 @@
 #import "ContactsViewController.h"
 
 #import <AddressBook/AddressBook.h>
+#import <MessageUI/MessageUI.h>
 #import "Person.h"
+#import "InvitesViewController.h"
 
 @interface ContactsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableContacts;
 @property (nonatomic, strong) NSMutableArray *tableData;
+@property (nonatomic, weak) IBOutlet UISegmentedControl *sgControl;
+@property (nonatomic, weak) IBOutlet UIButton *btnSendInvite;
 @end
 
 @implementation ContactsViewController
@@ -30,6 +34,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [_sgControl addTarget:self
+                         action:@selector(onSGChange:)
+               forControlEvents:UIControlEventValueChanged];
+    
+    [_btnSendInvite addTarget:self
+                   action:@selector(onSendInvite:)
+         forControlEvents:UIControlEventTouchUpInside];
     
     self.tableData = [[NSMutableArray alloc] init];
     
@@ -52,6 +64,14 @@
         [self getPersonOutOfAddressBook];
     }
 
+}
+
+- (void)onSGChange:(id)sender {
+    [_tableContacts reloadData];
+}
+
+- (void)onSendInvite:(id)sender {
+    [self showSMS:@"This is a test message from Vikas"];
 }
 
 - (void)getPersonOutOfAddressBook
@@ -112,7 +132,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.tableData count];
+    if (_sgControl.selectedSegmentIndex == 0) {
+        return [self.tableData count];
+    }
+    else {
+        return 0;
+    }
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -132,6 +158,54 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+}
+
+
+- (void)showSMS:(NSString*)message {
+    
+    if(![MFMessageComposeViewController canSendText]) {
+        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Your device doesn't support SMS!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [warningAlert show];
+        return;
+    }
+    
+    NSArray *recipents = @[@"vikas_jain2012@yahoo.com"];
+    
+    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
+    messageController.messageComposeDelegate = self;
+    [messageController setRecipients:recipents];
+    [messageController setBody:message];
+    
+    // Present message view controller on screen
+    [self presentViewController:messageController animated:YES completion:nil];
+}
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result{
+    switch (result) {
+        case MessageComposeResultCancelled:
+            break;
+            
+        case MessageComposeResultFailed:
+        {
+            UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Failed to send SMS!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [warningAlert show];
+            break;
+        }
+            
+        case MessageComposeResultSent:
+            [self sendToInvitesScreen];
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)sendToInvitesScreen {
+    InvitesViewController *objInvitesVC = [[InvitesViewController alloc] initWithNibName:@"InvitesViewController" bundle:nil];
+    [self.navigationController pushViewController:objInvitesVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
