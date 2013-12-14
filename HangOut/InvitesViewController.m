@@ -76,7 +76,9 @@
         cell.addressLine1.text = [dictInvites valueForKey:@"AddressLine1"];
         cell.addressLine2.text = [dictInvites valueForKey:@"AddressLine2"];
         cell.dateTime.text = [dictInvites valueForKey:@"Datetime"];
-        
+    
+    [cell setBackgroundColor:[UIColor clearColor]];
+    
         return cell;
 //    }else{
 //        return nil;
@@ -99,6 +101,7 @@
         }
     }
     
+    [self.tableInvites setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"app_bg1.png"]]];
     [self.tableInvites reloadData];
 }
 

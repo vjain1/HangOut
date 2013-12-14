@@ -15,14 +15,15 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <segmentedControl opaque="NO" clipsSubviews="YES" alpha="0.74999999999999978" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jUv-GD-ciO">
+                <segmentedControl opaque="NO" clipsSubviews="YES" alpha="0.74999999999999978" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jUv-GD-ciO">
                     <rect key="frame" x="20" y="73" width="280" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.70999999999999996" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.78979990433673475" green="0.59919347643979237" blue="0.13630394218960742" alpha="0.70999999999999996" colorSpace="calibratedRGB"/>
                     <segments>
                         <segment title="Received"/>
                         <segment title="Sent"/>
                     </segments>
+                    <color key="tintColor" red="0.003866390306" green="0.003103973406" blue="0.0024013817159999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                     <connections>
                         <action selector="onSegmentChange:" destination="-1" eventType="valueChanged" id="Gc0-17-6ze"/>
                     </connections>
