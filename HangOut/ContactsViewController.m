@@ -155,6 +155,8 @@
     Person *person = [self.tableData objectAtIndex:indexPath.row];
     cell.textLabel.text = person.fullName;
     
+    [cell setBackgroundColor:[UIColor clearColor]];
+    
     return cell;
 }
 

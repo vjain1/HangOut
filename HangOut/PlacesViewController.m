@@ -62,6 +62,8 @@
     cell.cafeName.text = [dictPlace valueForKey:@"CafeName"];
     cell.cafeAddress.text = [dictPlace valueForKey:@"CafeAddress"];
     
+    [cell setBackgroundColor:[UIColor clearColor]];
+    
     return cell;
 }
 

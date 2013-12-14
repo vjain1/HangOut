@@ -28,16 +28,16 @@
                     <color key="tintColor" red="0.17984693879999999" green="0.048163530189999998" blue="0.056349276509999997" alpha="1" colorSpace="calibratedRGB"/>
                 </segmentedControl>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ET3-Fm-WyA">
-                    <rect key="frame" x="28" y="142" width="265" height="284"/>
+                    <rect key="frame" x="28" y="132" width="265" height="284"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="MYh-2G-8iL"/>
                         <outlet property="delegate" destination="-1" id="g6i-zR-hiz"/>
                     </connections>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrc-sH-dKq">
-                    <rect key="frame" x="66" y="461" width="189" height="30"/>
+                    <rect key="frame" x="66" y="431" width="189" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.78979990430000002" green="0.59919347639999998" blue="0.1363039422" alpha="0.70999999999999996" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
