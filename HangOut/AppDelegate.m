@@ -3,7 +3,6 @@
 //  HangOut
 //
 //  Created by Vikas Jain on 12/13/13.
-//testing the reabseß
 //  Copyright (c) 2013 sapient. All rights reserved.
 //
 
