@@ -19,8 +19,6 @@
     HomeViewController *home = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
     self.mainNavController = [[UINavigationController alloc] initWithRootViewController:home];
     
-    //added a comment
-    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window setRootViewController:self.mainNavController];
     [self.window makeKeyAndVisible];
